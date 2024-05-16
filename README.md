@@ -125,6 +125,341 @@ Replace `"YOUR_API_KEY"` with your actual API key for OpenCelliD. Keep in mind t
 
 Additionally, remember to review OpenCelliD's terms of service and usage limits, as well as any applicable privacy regulations, before using their service.
 
+```
+
+Request: 
+2 WiFis, 1 Cell - {
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "radio": "gsm",
+    "mcc": 310,
+    "mnc": 404,
+    "cells": [{
+        "lac": 7033,
+        "cid": 17811
+    }],
+    "wifi": [{
+        "bssid": "00:17:c5:cd:ca:aa",
+        "channel": 11,
+        "frequency": 2412,
+        "signal": -51
+    }, {
+        "bssid": "d8:97:ba:c2:f0:5a"
+    }],
+    "address": 1
+}
+
+Request: 
+2 WiFis
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "wifi": [{
+        "bssid": "00:17:c5:cd:ca:aa",
+        "channel": 11,
+        "frequency": 2412,
+        "signal": -51
+    }, {
+        "bssid": "d8:97:ba:c2:f0:5a"
+    }],
+    "address": 1
+}
+
+Request: 
+IP fallback
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "ip": "49.204.218.106",
+    "fallbacks": {
+        "ipf": "1"
+    },
+    "address": 1
+}
+
+
+Request: 
+LAC fallback
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "cells": [{
+        "radio": "gsm",
+        "mcc": 310,
+        "mnc": 404,
+        "lac": 7011,
+        "cid": 0
+    }],
+    "fallbacks": {
+        "lacf": "2"
+    },
+    "address": 1
+}
+
+Request: 
+SCF fallback
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "radio": "umts",
+    "mcc": 310,
+    "mnc": 404,
+    "cells": [{
+        "lac": 38996,
+        "cid": 12814
+    }],
+    "address": 1,
+    "fallbacks": {
+        "scf": 1
+    }
+}
+
+Request: 
+PSC / PCI fallback
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "radio": "lte",
+    "mcc": 310,
+    "mnc": 404,
+    "cells": [{
+        "lac": 1,
+        "cid": 5632016
+    }, {
+        "lac": 1,
+        "psc": 221
+    }],
+    "address": 1
+}
+
+
+Request: 
+1 Cell - GSM
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "radio": "gsm",
+    "mcc": 310,
+    "mnc": 404,
+    "cells": [{
+        "lac": 7033,
+        "cid": 17811
+    }],
+    "address": 1
+}
+
+Request: 
+1 Cell - CDMA
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "radio": "cdma",
+    "mnc": 404,
+    "cells": [{
+        "lac": 7,
+        "cid": 4864
+    }],
+    "address": 1
+}
+
+
+Request: 
+1 Cell - UMTS
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "radio": "umts",
+    "mcc": 310,
+    "mnc": 404,
+    "cells": [{
+        "lac": 38996,
+        "cid": 40907278,
+        "psc": 0
+    }],
+    "address": 1
+}
+
+
+Request: 
+1 Cell - LTE
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "radio": "lte",
+    "mcc": 310,
+    "mnc": 404,
+    "cells": [{
+        "lac": 1,
+        "cid": 5632016,
+        "psc": 0
+    }],
+    "address": 1
+}
+
+
+Request: 
+1 Cell - Nb-IoT
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "radio": "nbiot",
+    "mcc": 262,
+    "mnc": 404,
+    "cells": [{
+        "lac": 42874,
+        "cid": 5323111,
+        "psc": 0
+    }],
+    "address": 1
+}
+
+Request: 
+1 Cell - NR (5G)
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "radio": "nr",
+    "mcc": 310,
+    "mnc": 404,
+    "cells": [{
+        "lac": 7033,
+        "cid": 56321809122,
+        "psc": 0
+    }],
+    "address": 1
+}
+
+
+Request: 
+6 Cells
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "radio": "gsm",
+    "mcc": 310,
+    "mnc": 404,
+    "cells": [{
+        "lac": 7033,
+        "cid": 17811
+    }, {
+        "lac": 7033,
+        "cid": 17812,
+        "signal": -60
+    }, {
+        "lac": 7033,
+        "cid": 18513
+    }, {
+        "lac": 7033,
+        "cid": 16383
+    }, {
+        "lac": 7033,
+        "cid": 12812
+    }, {
+        "lac": 7033,
+        "cid": 12811
+    }],
+    "address": 1
+}
+
+
+Request: 
+Multiple radios
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "radio": "gsm",
+    "mcc": 310,
+    "mnc": 404,
+    "cells": [{
+        "radio": "umts",
+        "mcc": 310,
+        "mnc": 404,
+        "lac": 7033,
+        "cid": 17811
+    }, {
+        "radio": "gsm",
+        "mcc": 310,
+        "mnc": 404,
+        "lac": 7033,
+        "cid": 17812,
+        "signal": -60
+    }],
+    "address": 1
+}
+
+
+Request: 
+Address with details
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "radio": "gsm",
+    "mcc": 310,
+    "mnc": 404,
+    "cells": [{
+        "lac": 7033,
+        "cid": 17811
+    }],
+    "address": 2
+}
+
+
+Request: 
+Per device plan
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "id": "Device_ID",
+    "radio": "gsm",
+    "mcc": 310,
+    "mnc": 404,
+    "cells": [{
+        "lac": 7033,
+        "cid": 17811
+    }, {
+        "lac": 7033,
+        "cid": 17812,
+        "signal": -60
+    }, {
+        "lac": 7033,
+        "cid": 18513
+    }, {
+        "lac": 7033,
+        "cid": 16383
+    }, {
+        "lac": 7033,
+        "cid": 12812
+    }, {
+        "lac": 7033,
+        "cid": 12811
+    }],
+    "address": 1
+}
+
+
+Request: 
+Contribute GPS Positions
+{
+    "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
+    "radio": "gsm",
+    "mcc": 310,
+    "mnc": 404,
+    "cells": [{
+        "lac": 7033,
+        "cid": 17811,
+        "timestamp": 1893456000000
+    }],
+    "wifi": [{
+        "bssid": "00:17:c5:cd:ca:aa",
+        "channel": 11,
+        "frequency": 2412,
+        "signal": -51,
+        "timestamp": 1893456000000
+    }, {
+        "bssid": "d8:97:ba:c2:f0:5a",
+        "timestamp": 1893456000000
+    }],
+    "gps": [{
+        "source": "gps",
+        "lat": 39.56764858,
+        "lon": -105.0073312,
+        "accuracy": 30.0,
+        "altitude": 100.0,
+        "altitude_accuracy": 50.0,
+        "speed": 10.2,
+        "heading": 35.5,
+        "timestamp": 1893456000000
+    }],
+    "geolocation": 0,
+    "metadata": 1,
+    "address": 1
+}
+```
+
 # Approximate Location
 
 <h3>What about this apis ?<br> http://ip-api.com/json <br>
