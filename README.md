@@ -168,6 +168,7 @@ Replace `"YOUR_API_KEY"` with your actual API key if required by the service. Ke
 
 <h3>Because Number-to-Location service not avalable Now</h3>
 <br>
+<img src="source/OpenCage.png" alt="Anomaly Detection" width="auto" height="auto" />
 <br>
 OpenCage Geocoding API is a geolocation service that provides limited free access with a daily quota of requests. Here's how you can use it to find the location of a mobile device based on its phone number using Python:
 
