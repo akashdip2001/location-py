@@ -236,3 +236,108 @@ locate_device(phone_number)
 Replace `'YOUR_API_KEY'` with your actual OpenCage API key. This script will geocode the provided phone number and display its location information, including the formatted address and coordinates.
 
 Remember to handle exceptions appropriately and ensure you comply with OpenCage's usage policy and any applicable laws and regulations.
+
+# updated OpenCage
+
+creat two file `test.py` and `location.py` 
+
+```python
+# number = "+91 (750) 112-0412"
+# number = "+91 (720) 397-2750"
+# number = "+91 (707) 603-3011"
+# number = "+1 (949) 666-0481"
+number = "+861 (922) 374-1593"
+# number = "+44 (749) 485-9645"
+```
+
+Run the code & Creat HTML file
+
+<table>
+<tr>
+<th>Example 1</th>
+<th>Example 2</th>
+</tr>
+<tr>
+<td>
+<pre>
+
+import phonenumbers
+from phonenumbers import geocoder 
+from test import number
+import folium
+
+Key = "9aee7c78cd2c4ca2a5f02078ba497b19"
+
+#number = input("Enter phone number with country code:")
+check_number = phonenumbers.parse(number)
+number_location = geocoder.description_for_number(check_number, "en")
+print(number_location)
+
+
+from phonenumbers import carrier 
+service_provider = phonenumbers.parse(number)
+print(carrier.name_for_number(service_provider, "en"))
+
+from opencage.geocoder import OpenCageGeocode
+geocoder = OpenCageGeocode(Key)
+
+query = str(number_location)
+results = geocoder.geocode(query)
+
+lat = results[0]['geometry']['lat']
+lng = results[0]['geometry']['lng']
+print(lat,lng)
+
+map_location = folium.Map(location = [lat,lng], zoom_start=9)
+folium.Marker([lat,lng], popup=number_location).add_to(map_location)
+map_location.save("mylocation.html")
+
+</pre>
+</td>
+<td>
+
+```python
+import phonenumbers
+from phonenumbers import geocoder, carrier
+import folium
+from opencage.geocoder import OpenCageGeocode
+from test import number
+
+Key = "9aee7c78cd2c4ca2a5f02078ba497b19"
+
+# Assuming 'number' is correctly imported from the 'test' module
+check_number = phonenumbers.parse(number)
+
+# Retrieve location information
+number_location = geocoder.description_for_number(check_number, "en")
+print("Location:", number_location)
+
+# Retrieve service provider information
+service_provider = carrier.name_for_number(check_number, "en")
+print("Service Provider:", service_provider)
+
+# Geocoding the location
+geocoder_obj = OpenCageGeocode(Key)
+query = str(number_location)
+results = geocoder_obj.geocode(query)
+
+if results and len(results) > 0:
+    lat = results[0]['geometry']['lat']
+    lng = results[0]['geometry']['lng']
+    print("Latitude:", lat, "Longitude:", lng)
+
+    # Create HTML map
+    map_location = folium.Map(location=[lat, lng], zoom_start=9)
+    folium.Marker([lat, lng], popup=number_location).add_to(map_location)
+    map_location.save("mylocation.html")
+else:
+    print("Location not found.")
+
+
+```
+
+</td>
+</tr>
+</table>
+
+<img src="source/location.png" alt="Anomaly Detection" width="auto" height="auto" />
