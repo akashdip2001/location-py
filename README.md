@@ -125,8 +125,9 @@ Replace `"YOUR_API_KEY"` with your actual API key for OpenCelliD. Keep in mind t
 
 Additionally, remember to review OpenCelliD's terms of service and usage limits, as well as any applicable privacy regulations, before using their service.
 
-```
+[link](https://my.unwiredlabs.com/dashboard)
 
+```
 Request: 
 2 WiFis, 1 Cell - {
     "token": "pk.78de4bfe360ad0f5a4d0ac303bc5546a",
@@ -147,7 +148,8 @@ Request:
     }],
     "address": 1
 }
-
+```
+```
 Request: 
 2 WiFis
 {
@@ -162,7 +164,8 @@ Request:
     }],
     "address": 1
 }
-
+```
+```
 Request: 
 IP fallback
 {
@@ -174,7 +177,8 @@ IP fallback
     "address": 1
 }
 
-
+```
+```
 Request: 
 LAC fallback
 {
@@ -191,7 +195,8 @@ LAC fallback
     },
     "address": 1
 }
-
+```
+```
 Request: 
 SCF fallback
 {
@@ -208,7 +213,8 @@ SCF fallback
         "scf": 1
     }
 }
-
+```
+```
 Request: 
 PSC / PCI fallback
 {
@@ -226,7 +232,8 @@ PSC / PCI fallback
     "address": 1
 }
 
-
+```
+```
 Request: 
 1 Cell - GSM
 {
@@ -240,7 +247,8 @@ Request:
     }],
     "address": 1
 }
-
+```
+```
 Request: 
 1 Cell - CDMA
 {
@@ -254,7 +262,8 @@ Request:
     "address": 1
 }
 
-
+```
+```
 Request: 
 1 Cell - UMTS
 {
@@ -270,7 +279,8 @@ Request:
     "address": 1
 }
 
-
+```
+```
 Request: 
 1 Cell - LTE
 {
@@ -286,7 +296,8 @@ Request:
     "address": 1
 }
 
-
+```
+```
 Request: 
 1 Cell - Nb-IoT
 {
@@ -301,7 +312,8 @@ Request:
     }],
     "address": 1
 }
-
+```
+```
 Request: 
 1 Cell - NR (5G)
 {
@@ -317,7 +329,8 @@ Request:
     "address": 1
 }
 
-
+```
+```
 Request: 
 6 Cells
 {
@@ -348,7 +361,8 @@ Request:
     "address": 1
 }
 
-
+```
+```
 Request: 
 Multiple radios
 {
@@ -373,7 +387,8 @@ Multiple radios
     "address": 1
 }
 
-
+```
+```
 Request: 
 Address with details
 {
@@ -388,7 +403,8 @@ Address with details
     "address": 2
 }
 
-
+```
+```
 Request: 
 Per device plan
 {
@@ -420,7 +436,8 @@ Per device plan
     "address": 1
 }
 
-
+```
+```
 Request: 
 Contribute GPS Positions
 {
