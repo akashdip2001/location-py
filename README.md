@@ -127,13 +127,13 @@ Additionally, remember to review OpenCelliD's terms of service and usage limits,
 
 # Approximate Location
 
-<h1>What about this apis ?<br> http://ip-api.com/json <br>
+<h3>What about this apis ?<br> http://ip-api.com/json <br>
 https://ip.nf/me.json<br>
 https://ipapi.co/json<br>
 https://geoip.tools/v1/json<br>
 https://geolp.nekudo.com/api/<br> https://extreme-ip-lookup.com/json/<br>
 http://www.geoplugin.net/json.gp<br>
-https://ipinfo.io/json</h1>
+https://ipinfo.io/json</h3>
 
 These APIs you've listed are primarily for IP address geolocation, which means they provide information about the geographical location associated with an IP address rather than directly locating a mobile device by its phone number. While they can be useful for determining the general location of an IP address, they may not provide accurate or real-time data for pinpointing a mobile device's location.
 
@@ -166,8 +166,9 @@ Replace `"YOUR_API_KEY"` with your actual API key if required by the service. Ke
 
 # using OpenCage Geocoding API ( not Work 📍)
 
-<h1>Because Number-to-Location service not avalable Now</h1>
-
+<h3>Because Number-to-Location service not avalable Now</h3>
+<br>
+<br>
 OpenCage Geocoding API is a geolocation service that provides limited free access with a daily quota of requests. Here's how you can use it to find the location of a mobile device based on its phone number using Python:
 
 1. **Sign up for OpenCage API**: Register for a free account on the OpenCage website to obtain an API key.
