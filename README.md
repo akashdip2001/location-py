@@ -164,11 +164,12 @@ locate_device(ip_address)
 
 Replace `"YOUR_API_KEY"` with your actual API key if required by the service. Keep in mind that IP-based geolocation may not always be accurate, especially for mobile devices accessing the internet through cellular networks or VPNs.
 
+<img src="source/OpenCage.png" alt="Anomaly Detection" width="auto" height="auto" />
+
 # using OpenCage Geocoding API ( not Work 📍)
 
 <h3>Because Number-to-Location service not avalable Now</h3>
 <br>
-<img src="source/OpenCage.png" alt="Anomaly Detection" width="auto" height="auto" />
 <br>
 OpenCage Geocoding API is a geolocation service that provides limited free access with a daily quota of requests. Here's how you can use it to find the location of a mobile device based on its phone number using Python:
 
