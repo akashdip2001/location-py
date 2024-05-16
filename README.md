@@ -88,6 +88,9 @@ locate_device(phone_number)
 
 This script will provide you with information about the country and carrier associated with the provided phone number. While this doesn't give real-time location data, it can still be useful for your project. Remember to handle exceptions appropriately and ensure you comply with all applicable laws and ethical guidelines.
 
+
+<img width="auto" src="source/OpenCelliD.png"> 
+
 # using "OpenCelliD" project
 
 One option for limited free access to geolocation services is the "OpenCelliD" project, which provides a database of cell tower locations worldwide. You can use this data for cell tower triangulation to estimate a device's location based on nearby towers.
