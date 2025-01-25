@@ -2,6 +2,8 @@
 
 # using Google Map API
 
+![Screenshot (35)](https://github.com/user-attachments/assets/1e02f8e4-dee6-4675-b31a-f156619d0a58)
+
 If you have proper authorization and consent, you can use legitimate methods to track a device. Here's a simplified step-by-step process using Kali Linux:
 
 1. **Install Required Tools**: Ensure you have the necessary tools installed on Kali Linux. You may need packages like `python`, `pip`, and libraries for geolocation services.
