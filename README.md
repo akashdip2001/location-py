@@ -2,7 +2,7 @@
 
 # using Google Map API
 
-![Screenshot (35)](https://github.com/user-attachments/assets/1e02f8e4-dee6-4675-b31a-f156619d0a58)
+![Screenshot (35)](https://github.com/user-attachments/assets/f6936c9e-0b5b-40cf-9438-a631b45c0a93)
 
 If you have proper authorization and consent, you can use legitimate methods to track a device. Here's a simplified step-by-step process using Kali Linux:
 
